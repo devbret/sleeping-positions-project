@@ -1,9 +1,11 @@
 # Quantifying Sleep Positions With Body Weight
 
-A device to measure the positioning of my body while asleep using 8 force-sensitive resistor (FSR) pads from Adafruit. Which will be connected to a Raspberry Pi 5 computer. All in search of patterns within my physical behavior at night while asleep.
+![Photo of various electronic components.](https://hosting.photobucket.com/bbcfb0d4-be20-44a0-94dc-65bff8947cf2/5b93a2c3-8297-4a47-996c-a428c35c57b8.jpg)
 
-I will be collecting this data using Python, Flask and JSON, then later visualizing findings using D3.js and other JavaScript tools.
+Systematically quantifying sleep behavior by capturing and analyzing how body weight is distributed across a sleeping surface over extended periods of time.
 
-This project is currently in the research/ideation phase, and the hardware is still being assembled. But enough is known about the experiment making it appropriate to create a new, dedicated project page.
+## Overview
 
-I will be updating this resource with more information in the near future.
+The project uses eight force-sensitive resistor (FSR) pads connected to a Raspberry Pi 5 to capture pressure data throughout the night. By continuously recording these signals, the system can infer sleeping positions and detect patterns in how the body shifts during rest. The data workflow is being designed around Python and Flask for collection and storage as JSON, forming a flexible foundation for long-term tracking.
+
+Currently the project is focused on research, hardware assembly and validating the feasibility of this approach. The broader goal is to analyze trends over a 30 to 90 day period and translate raw pressure data into meaningful insights about physical behavior during sleep. Visualization will play a key role, with D3.js and JavaScript tools planned to transform the collected data into interactive graphics. This iterative process reflects a hands-on approach to self-quantification and pattern discovery.
