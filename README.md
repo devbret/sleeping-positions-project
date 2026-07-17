@@ -28,7 +28,7 @@ Below are the required software programs and instructions for running the curren
 
 2. Enable I2C on the Raspberry Pi: `sudo raspi-config`
 
-3. Select `Interface Options` and `I2C`
+3. Select `Interface Options` and `I2C` from the RPi config UI
 
 4. Wire the AMG8833 sensor to the RPi's SCL and SDA pins
 
@@ -44,23 +44,23 @@ Below are the required software programs and instructions for running the curren
 
 10. Install the needed dependencies: `pip install adafruit-circuitpython-amg88xx`
 
-11. Run the sensor script: `python app.py`
+11. Run the sensor script: `python3 app.py`
 
 ## Development Roadmap
 
-The planned FSR system follows the following development pipeline:
+The planned FSR system follows development pipeline outlined below:
 
 - **Sense:** Eight FSR pads positioned across the sleeping surface, each registering pressure applied by body weight
 
 - **Collect:** Raspberry Pi 5 continuously reads the FSR signals throughout the night using Python
 
-- **Store:** Flask-based workflow records the readings as JSON so as to keep the data flexible for long-term accumulation
+- **Store:** Workflow records the readings as JSON so as to keep the data flexible for long-term accumulation
 
 - **Analyze:** Over 30 to 90 days, the accumulated pressure data is mined for trends in sleeping positions
 
 - **Visualize:** Interactive graphics built with D3.js and other JavaScript tools translate the raw data into meaningful insights
 
-Progress updates, build logs and photos are documented at the [Hackaday.io project page](https://hackaday.io/project/203728-quantifying-sleep-positions-with-body-weight).
+Progress updates, build logs and photos are documented at the associated [Hackaday.io project page](https://hackaday.io/project/203728-quantifying-sleep-positions-with-body-weight).
 
 ## Other Considerations
 
